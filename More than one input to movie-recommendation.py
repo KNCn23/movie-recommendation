@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Netflix veri setini yükleyin
-file_path = "C:/Users/akcol/Desktop/netflix_titles.csv"
+file_path = "Your file location"
 data = pd.read_csv(file_path)
 
 # Boş değerleri "Unknown" ile doldurun
