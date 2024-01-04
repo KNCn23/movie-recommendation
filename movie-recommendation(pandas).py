@@ -3,7 +3,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Netflix veri setini yükleyin
-file_path = "C:/Users/akcol/Desktop/netflix_titles.csv"
+file_path = "your file name !!!!"
 data = pd.read_csv(file_path)
 
 # Boş değerleri "Unknown" ile doldurun
