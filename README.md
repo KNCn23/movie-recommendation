@@ -1,4 +1,4 @@
-# Movie Recommendation with pyhton
+# Movie Recommendation with python
 
 - Install the csv file.
 - Make sure the input is correct. Code is case sensetive, so type exactly the same as in the file.
