@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.env
+*.egg-info/
+
+# macOS
+.DS_Store
+
+# Large data files (keep netflix_titles.csv as it's required)
+*.pkl
+*.h5
