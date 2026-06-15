@@ -15,6 +15,10 @@ posters, ratings and a bilingual (EN/TR) interface.
 
 **▶ Try it live: https://kncn23.github.io/movie-recommendation/**
 
+![CineMatch — search and browse 9,500+ films](assets/home.png)
+
+![CineMatch — movie detail with content-based recommendations](assets/detail.png)
+
 ## How it works
 
 GitHub Pages serves only static files, so there is **no server at runtime**. The
