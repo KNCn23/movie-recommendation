@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineMatch — Content-based movie recommendations</title>
+    <meta
+      name="description"
+      content="Search 9,500+ movies and get instant content-based recommendations, powered by a TF-IDF + cosine similarity engine. Free, static, open source."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e50914'/%3E%3Ctext x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Arial'%3E%E2%96%B6%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://image.tmdb.org" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Loading splash, removed once data is fetched -->
+    <div id="splash" class="splash">
+      <div class="splash-logo">Cine<span>Match</span></div>
+      <div class="spinner"></div>
+      <p id="splash-text">Loading movies…</p>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#/" aria-label="CineMatch home">
+        <span class="brand-mark">▶</span>Cine<span class="brand-accent">Match</span>
+      </a>
+
+      <div class="search-wrap">
+        <input
+          id="search"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="Search for a movie…"
+          aria-label="Search for a movie"
+        />
+        <ul id="suggestions" class="suggestions" hidden></ul>
+      </div>
+
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="tr" type="button">TR</button>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="site-footer">
+      <p id="footer-data"></p>
+      <p>
+        <a
+          href="https://github.com/KNCn23/movie-recommendation"
+          target="_blank"
+          rel="noopener"
+          >Source on GitHub</a
+        >
+        · <span id="footer-note"></span>
+      </p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

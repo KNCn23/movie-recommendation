@@ -1,11 +1,20 @@
+# Python
 __pycache__/
 *.py[cod]
+.venv/
+venv/
+env/
 .env
 *.egg-info/
 
 # macOS
 .DS_Store
 
-# Large data files (keep netflix_titles.csv as it's required)
+# Local tooling (editor / preview launch config)
+.claude/
+
+# Cached models (regenerable from the dataset)
 *.pkl
 *.h5
+
+# NOTE: docs/data/movies.json IS committed — GitHub Pages serves it.
